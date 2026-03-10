@@ -78,7 +78,7 @@ Bu proje MIT lisansı ile lisanslanmıştır.
 *Geliştiren: [Liva Karanfil](https://github.com/Liva21)*
 # rag-assistant görseli
 
-<img width="3020" height="1690" alt="image" src="https://github.com/user-attachments/assets/4cb1bec6-c020-4351-87d2-eeb1001d4208" />
+
 <img width="3004" height="1628" alt="image" src="https://github.com/user-attachments/assets/f06c63de-ecaa-412e-adfa-fdfe6aad3e9e" />
 
 
