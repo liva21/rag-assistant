@@ -1,0 +1,38 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: omi_backend
+    ports:
+      - "8003:8000"
+    volumes:
+      - .:/app
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    networks:
+      - omi_network
+    env_file:
+      - .env
+    environment:
+      - HUGGINGFACEHUB_API_URL=https://router.huggingface.co
+      - HUGGINGFACEHUB_API_TOKEN=${HUGGINGFACEHUB_API_TOKEN}
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: omi_frontend
+    ports:
+      - "8503:8501"
+    environment:
+      - BACKEND_URL=http://host.docker.internal:8003
+    depends_on:
+      - backend
+    networks:
+      - omi_network
+
+networks:
+  omi_network:
+    driver: bridge
