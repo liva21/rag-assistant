@@ -79,6 +79,5 @@ Bu proje MIT lisansı ile lisanslanmıştır.
 # rag-assistant görseli
 
 
-<img width="3004" height="1628" alt="image" src="https://github.com/user-attachments/assets/f06c63de-ecaa-412e-adfa-fdfe6aad3e9e" />
-
+<img width="2992" height="1654" alt="image" src="https://github.com/user-attachments/assets/aa326fda-e76f-4c90-8308-0bdc57315e43" />
 
